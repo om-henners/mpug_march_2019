@@ -233,6 +233,10 @@ p.text = '(And yes, this presentation was all written in Python)'
 p = tf.add_paragraph()
 p.level = 1
 p.text = '245 lines of code'
+p = tf.add_paragraph()
+run = p.add_run()
+run.text = 'https://github.com/om-henners/mpug_march_2019'
+run.hyperlink.address = 'https://github.com/om-henners/mpug_march_2019'
 
 right_body = slide.shapes.placeholders[2]
 tf = right_body.text_frame
