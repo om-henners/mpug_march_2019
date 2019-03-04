@@ -9,7 +9,8 @@ import gorilla
 import content_placeholder_patch
 
 
-# first, monkey patch using gorilla as per https://github.com/scanny/python-pptx/issues/333#issuecomment-427055526
+# first, monkey patch using gorilla as per
+# https://github.com/scanny/python-pptx/issues/333#issuecomment-427055526
 patches = gorilla.find_patches([content_placeholder_patch])
 for patch in patches:
     gorilla.apply(patch)
@@ -232,7 +233,7 @@ p = tf.add_paragraph()
 p.text = '(And yes, this presentation was all written in Python)'
 p = tf.add_paragraph()
 p.level = 1
-p.text = '245 lines of code'
+p.text = '250 lines of code'
 p = tf.add_paragraph()
 run = p.add_run()
 run.text = 'https://github.com/om-henners/mpug_march_2019'
